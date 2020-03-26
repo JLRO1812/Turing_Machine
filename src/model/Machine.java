@@ -59,4 +59,29 @@ public class Machine {
 		}return current;
 	}
 
+	public String readChar(char head) {
+		
+		return null;
+	}
+
+	public void addFirstChar(char letter) {
+		
+		
+	}
+
+	public void addMiddleChar(char letter) {
+		
+		
+	}
+
+	public void addEndChar(char letter) {
+		
+		
+	}
+
+	public void removeChar(char head) {
+		
+		
+	}
+
 }
