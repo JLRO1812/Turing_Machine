@@ -5,7 +5,7 @@ public class HeadBand {
 	private char symbol;
 	private HeadBand nextHeadB;
 	
-	private HeadBand(char s) {
+	public HeadBand(char s) {
 		s = symbol;
 		nextHeadB = null;
 	}
@@ -14,7 +14,7 @@ public class HeadBand {
 		return symbol;
 	}
 	
-	public HeadBand getNextHead() {
+	public HeadBand getNextHeadB() {
 		return nextHeadB;
 	}
 	
