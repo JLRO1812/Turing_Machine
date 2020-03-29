@@ -59,11 +59,19 @@ public class Machine {
 		}return current;
 	}
 
-	public String readChar(char head) {
+	public char readChar(char head) {
 		
+		char print = 0;
 		
-		
-		return null;
+		if(head==c0.getSymbol()) {
+			print=c0.getSymbol();
+		}else if(head==c1.getSymbol()) {
+			print=c1.getSymbol();
+		}else if(head==c2.getSymbol()){
+			print=c2.getSymbol();
+		}
+			
+		return print;
 	}
 
 	public void addFirstChar(char letter) {

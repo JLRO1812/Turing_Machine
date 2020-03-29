@@ -36,21 +36,21 @@ public class Main {
 				head = (input.charAt(newInstruccion));
 				action = (input.charAt(newInstruccion + 1));
 				
-				if(action == 0) {
+				if(action == '0') {
 					result = result + tMachine.readChar(head)+ "\n";
 					newInstruccion = newInstruccion + 2;
-				}else if (action == 1) {
+				}else if (action == '1') {
 					letter = (input.charAt(newInstruccion + 2));
 					
-					if(head == 0) {
+					if(head == '0') {
 						tMachine.addFirstChar(letter);
-					}else if(head == 1) {
+					}else if(head == '1') {
 						tMachine.addMiddleChar(letter);
-					}else if(head == 2) {
+					}else if(head == '2') {
 						tMachine.addEndChar(letter);
 					}newInstruccion = newInstruccion + 3;
 					
-				}else if(action == 2) {
+				}else if(action == '2') {
 					tMachine.removeChar(head);
 					newInstruccion = newInstruccion + 2;
 				}else {
