@@ -64,10 +64,15 @@ public class Machine {
 		char print = 0;
 		
 		if(head==c0.getSymbol()) {
+			if(c0==null) {
+				print='#';
+			}else
 			print=c0.getSymbol();
 		}else if(head==c1.getSymbol()) {
+			
 			print=c1.getSymbol();
 		}else if(head==c2.getSymbol()){
+			
 			print=c2.getSymbol();
 		}
 			
