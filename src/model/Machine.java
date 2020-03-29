@@ -59,26 +59,6 @@ public class Machine {
 		}return current;
 	}
 
-	public char readChar(char head) {
-		
-		char print = 0;
-		
-		if(head==c0.getSymbol()) {
-			if(c0==null) {
-				print='#';
-			}else
-			print=c0.getSymbol();
-		}else if(head==c1.getSymbol()) {
-			
-			print=c1.getSymbol();
-		}else if(head==c2.getSymbol()){
-			
-			print=c2.getSymbol();
-		}
-			
-		return print;
-	}
-
 	public void addFirstChar(char letter) {
 		
 		HeadBand first = new HeadBand(letter);
@@ -114,7 +94,27 @@ public class Machine {
 			end.addAfter(c2);
 		}
 	}
-
+	
+	public char readChar(char head) {
+		
+		char print = 0;
+		
+		if(head==c0.getSymbol()) {
+			if(c0==null) {
+				print='#';
+			}else
+			print=c0.getSymbol();
+		}else if(head==c1.getSymbol()) {
+			
+			print=c1.getSymbol();
+		}else if(head==c2.getSymbol()){
+			
+			print=c2.getSymbol();
+		}
+			
+		return print;
+	}
+	
 	public void removeChar(char head) {
 		
 		if(head == c0.getSymbol()) {
@@ -125,5 +125,4 @@ public class Machine {
 			c2 = c2.getNextHeadB();
 		}
 	}
-
 }
